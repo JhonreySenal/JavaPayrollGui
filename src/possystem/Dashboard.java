@@ -62,16 +62,12 @@ public class Dashboard extends javax.swing.JFrame {
         jTable1 = new javax.swing.JTable();
         jLabel10 = new javax.swing.JLabel();
         totalLabel = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         cashInp = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
         txtTotal = new javax.swing.JTextField();
-        change = new javax.swing.JTextField();
         payBtn = new javax.swing.JButton();
-        resetBtn = new javax.swing.JButton();
         menuPanel = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         flavorMenu = new javax.swing.JPanel();
@@ -122,22 +118,22 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(313, Short.MAX_VALUE)
+                .addContainerGap(101, Short.MAX_VALUE)
                 .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 796, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(57, 57, 57)
+                .addGap(105, 105, 105)
                 .addComponent(exitBtn)
-                .addGap(16, 16, 16))
+                .addGap(180, 180, 180))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(exitBtn))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(15, 15, 15)
-                        .addComponent(jLabel13)))
+                        .addComponent(jLabel13))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(exitBtn)))
                 .addContainerGap(25, Short.MAX_VALUE))
         );
 
@@ -295,14 +291,15 @@ public class Dashboard extends javax.swing.JFrame {
             homePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(homePanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 994, Short.MAX_VALUE))
+                .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 994, Short.MAX_VALUE)
+                .addGap(101, 101, 101))
         );
         homePanelLayout.setVerticalGroup(
             homePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(homePanelLayout.createSequentialGroup()
-                .addGap(109, 109, 109)
+                .addGap(103, 103, 103)
                 .addComponent(jLabel5)
-                .addContainerGap(406, Short.MAX_VALUE))
+                .addContainerGap(412, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("tab3", homePanel);
@@ -326,60 +323,47 @@ public class Dashboard extends javax.swing.JFrame {
                 return types [columnIndex];
             }
         });
+        jTable1.setGridColor(new java.awt.Color(51, 51, 51));
+        jTable1.setSelectionBackground(new java.awt.Color(51, 51, 51));
         jScrollPane1.setViewportView(jTable1);
 
-        paymentPanel.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 130, 493, 310));
+        paymentPanel.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 130, 640, 310));
 
         jLabel10.setFont(new java.awt.Font("Segoe UI Black", 1, 36)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel10.setText("PAYMENT DASHBOARD");
-        paymentPanel.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 1000, -1));
+        paymentPanel.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 830, -1));
 
         totalLabel.setBackground(new java.awt.Color(255, 255, 255));
         totalLabel.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         totalLabel.setForeground(new java.awt.Color(255, 255, 255));
         totalLabel.setText("_________");
-        paymentPanel.add(totalLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 470, -1, 20));
-
-        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel11.setText("Change:");
-        paymentPanel.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 530, -1, -1));
-
-        jLabel12.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel12.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel12.setText("_________");
-        paymentPanel.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 530, -1, -1));
+        paymentPanel.add(totalLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 450, -1, 20));
 
         jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setText("Cash:");
-        paymentPanel.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 500, -1, -1));
+        paymentPanel.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 480, -1, -1));
 
         jLabel17.setBackground(new java.awt.Color(255, 255, 255));
         jLabel17.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(255, 255, 255));
         jLabel17.setText("_________");
-        paymentPanel.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 500, -1, -1));
+        paymentPanel.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 480, -1, 20));
 
         cashInp.setBackground(new java.awt.Color(118, 171, 174));
         cashInp.setForeground(new java.awt.Color(255, 255, 255));
         cashInp.setBorder(null);
-        paymentPanel.add(cashInp, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 500, 50, 10));
+        paymentPanel.add(cashInp, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 480, 50, 10));
 
         jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setText("Total:");
-        paymentPanel.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 470, -1, -1));
+        paymentPanel.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 450, -1, -1));
 
         txtTotal.setBackground(new java.awt.Color(118, 171, 174));
         txtTotal.setForeground(new java.awt.Color(255, 255, 255));
         txtTotal.setBorder(null);
-        paymentPanel.add(txtTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 470, 50, 10));
-
-        change.setBackground(new java.awt.Color(118, 171, 174));
-        change.setForeground(new java.awt.Color(255, 255, 255));
-        change.setBorder(null);
-        paymentPanel.add(change, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 530, 50, -1));
+        paymentPanel.add(txtTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 450, 50, 10));
 
         payBtn.setBackground(new java.awt.Color(43, 54, 63));
         payBtn.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -390,18 +374,7 @@ public class Dashboard extends javax.swing.JFrame {
                 payBtnActionPerformed(evt);
             }
         });
-        paymentPanel.add(payBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 500, 90, 30));
-
-        resetBtn.setBackground(new java.awt.Color(43, 54, 63));
-        resetBtn.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        resetBtn.setForeground(new java.awt.Color(255, 255, 255));
-        resetBtn.setText("RESET");
-        resetBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                resetBtnActionPerformed(evt);
-            }
-        });
-        paymentPanel.add(resetBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 530, 90, 30));
+        paymentPanel.add(payBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 480, 90, 30));
 
         jTabbedPane1.addTab("tab2", paymentPanel);
 
@@ -413,7 +386,7 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("MENU");
-        menuPanel.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 60, 1000, -1));
+        menuPanel.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 790, -1));
 
         flavorMenu.setBackground(new java.awt.Color(118, 171, 174));
         flavorMenu.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Chicken", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI Black", 1, 24), new java.awt.Color(255, 255, 255))); // NOI18N
@@ -454,7 +427,7 @@ public class Dashboard extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        menuPanel.add(flavorMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, 230, 260));
+        menuPanel.add(flavorMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 140, 230, 260));
 
         txtQty.setBackground(new java.awt.Color(118, 171, 174));
         txtQty.setForeground(new java.awt.Color(255, 255, 255));
@@ -543,7 +516,7 @@ public class Dashboard extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        menuPanel.add(DrinksMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 140, 230, 260));
+        menuPanel.add(DrinksMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 140, 230, 260));
 
         jPanel4.setBackground(new java.awt.Color(118, 171, 174));
         jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Desert", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI Black", 0, 24), new java.awt.Color(255, 255, 255))); // NOI18N
@@ -588,7 +561,7 @@ public class Dashboard extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        menuPanel.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 140, 230, 260));
+        menuPanel.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 140, 230, 260));
 
         jTabbedPane1.addTab("tab3", menuPanel);
 
@@ -605,7 +578,7 @@ public class Dashboard extends javax.swing.JFrame {
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        setSize(new java.awt.Dimension(1200, 600));
+        setSize(new java.awt.Dimension(1028, 600));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -777,34 +750,6 @@ public class Dashboard extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtQtyActionPerformed
 
-    private void payBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_payBtnActionPerformed
-       try{
-           int cash = Integer.parseInt(cashInp.getText());
-           int tot = Integer.parseInt(txtTotal.getText());
-           if (cash < tot) {
-               JOptionPane.showMessageDialog(this, "Low Cash!");
-                cashInp.setText("");
-           }else {
-               int Change = cash - tot;
-                JOptionPane.showMessageDialog(this, "Payment Successful!");
-                model.setRowCount(0);
-                txtTotal.setText("");
-                cashInp.setText("");
-                change.setText(String.valueOf(Change));
-               
-           }
-       }catch(NumberFormatException e){
-          JOptionPane.showMessageDialog(this, "Please Enter a Number");
-           cashInp.setText("");
-       }
-    }//GEN-LAST:event_payBtnActionPerformed
-
-    private void resetBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resetBtnActionPerformed
-         model.setRowCount(0);
-        txtTotal.setText("");
-        change.setText("");
-    }//GEN-LAST:event_resetBtnActionPerformed
-
     private void icedTeaBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_icedTeaBtnActionPerformed
       
     }//GEN-LAST:event_icedTeaBtnActionPerformed
@@ -812,6 +757,38 @@ public class Dashboard extends javax.swing.JFrame {
     private void BukoSaladBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BukoSaladBtnActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_BukoSaladBtnActionPerformed
+
+    private void payBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_payBtnActionPerformed
+        try {
+            int cash = Integer.parseInt(cashInp.getText());
+            int tot = Integer.parseInt(txtTotal.getText());
+            if (cash < tot) {
+                JOptionPane.showMessageDialog(this, "Low Cash!");
+                cashInp.setText("");
+            } else {
+                int change = cash - tot;
+
+                // For the receipt message
+                String receipt = "---- J'S CHICKEN WINGS Receipt ----\n" +
+                "Total Amount: " + tot + "\n" +
+                "Cash Received: " + cash + "\n" +
+                "Change: " + change + "\n" +
+                "-----------------\n" +
+                "Thank you for shopping!";
+
+                // Display Receipt Message
+                JOptionPane.showMessageDialog(this, receipt, "Receipt", JOptionPane.INFORMATION_MESSAGE);
+
+                // Reset the current value
+                model.setRowCount(0);
+                txtTotal.setText("");
+                cashInp.setText("");
+            }
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(this, "Please Enter a Number");
+            cashInp.setText("");
+        }
+    }//GEN-LAST:event_payBtnActionPerformed
 
 
     public static void main(String args[]) {
@@ -857,7 +834,6 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JPanel Menu;
     private javax.swing.JPanel Payment;
     private javax.swing.JTextField cashInp;
-    private javax.swing.JTextField change;
     private javax.swing.JRadioButton classic;
     private javax.swing.JRadioButton colaBtn;
     private javax.swing.JButton confirmBtn2;
@@ -869,8 +845,6 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JRadioButton icedTeaBtn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
@@ -893,7 +867,6 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JButton payBtn;
     private javax.swing.JPanel paymentPanel;
     private javax.swing.JButton proceedPaymentBtn;
-    private javax.swing.JButton resetBtn;
     private javax.swing.JRadioButton royalBtn;
     private javax.swing.JRadioButton spriteBtn;
     private javax.swing.JRadioButton sweetSour;
